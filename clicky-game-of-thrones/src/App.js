@@ -18,21 +18,19 @@ class App extends React.Component {
     return arr.sort(() => Math.random() - 0.5)
   }
   
-  // updateCharArr = (id) => {
-    
-  // }
-
   handleClick = id => {
     this.state.characters.find((char, i) => {
       if (char.id === id) {
         if (characters[i].count === 0) {
-          console.log(characters[i])
+          characters[i].count = characters[i].count + 1;
+          this.setState({score: this.state.score + 1}, function() {
+            console.log(this.state.score)
+          })
+          this.shuffle(this.state.characters);
+          return true;
         }
         
       }
-    })
-    this.setState({
-      characters: this.shuffle(this.state.characters)
     })
   }
 

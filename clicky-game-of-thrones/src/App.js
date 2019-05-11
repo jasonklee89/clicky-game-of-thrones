@@ -17,6 +17,14 @@ class App extends React.Component {
   shuffle = arr => {
     return arr.sort(() => Math.random() - 0.5)
   }
+
+  gameOver = () => {
+    if (this.state.score > this.state.topScore) {
+      this.setState({topScore: this.state.score}, function() {
+        console.log(`Top Score: ${this.state.topScore}`);
+      })
+    }
+  }
   
   handleClick = id => {
     this.state.characters.find((char, i) => {
@@ -24,12 +32,13 @@ class App extends React.Component {
         if (characters[i].count === 0) {
           characters[i].count = characters[i].count + 1;
           this.setState({score: this.state.score + 1}, function() {
-            console.log(this.state.score)
+            console.log(`Score: ${this.state.score}`)
           })
           this.shuffle(this.state.characters);
           return true;
+        } else {
+          this.gameOver();
         }
-        
       }
     })
   }

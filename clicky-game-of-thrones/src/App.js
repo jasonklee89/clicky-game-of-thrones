@@ -24,6 +24,10 @@ class App extends React.Component {
         console.log(`Top Score: ${this.state.topScore}`);
       })
     }
+    this.state.characters.forEach(char => {
+      char.count = 0;
+      console.log(`Character Count: ${char.count}`);
+    })
   }
   
   handleClick = id => {
@@ -31,6 +35,7 @@ class App extends React.Component {
       if (char.id === id) {
         if (characters[i].count === 0) {
           characters[i].count = characters[i].count + 1;
+          console.log(`Count: ${characters[i].count}`)
           this.setState({score: this.state.score + 1}, function() {
             console.log(`Score: ${this.state.score}`)
           })

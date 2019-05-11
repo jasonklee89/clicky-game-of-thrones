@@ -11,7 +11,6 @@ import './App.css';
 class App extends React.Component {
   state = {
     characters,
-    characterArr,
     score: 0,
     topScore: 0
   };

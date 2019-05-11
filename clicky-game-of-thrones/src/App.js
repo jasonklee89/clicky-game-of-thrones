@@ -60,9 +60,11 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header score={this.state.score} topScore={this.state.topScore}/>
+        <Header score={this.state.score} 
+          topScore={this.state.topScore} />
         <Container>
-          <Instructions display={this.state.display}/>
+          <Instructions 
+          display={this.state.display} />
           <Wrapper>
             {this.state.characters.map(character => (
                 <PictureCard

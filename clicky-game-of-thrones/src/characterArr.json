@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Arya Stark",
+        "image": "/assets/images/arya.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Lord Baelish",
+        "image": "/assets/images/baelish.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Brienne of Tarth",
+        "image": "/assets/images/brienne.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Daenerys Targaryen",
+        "image": "/assets/images/daenerys.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Hodor",
+        "image": "/assets/images/hodor.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Jaqen H'ghar",
+        "image": "/assets/images/jaqen.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Jon Snow",
+        "image": "/assets/images/jonsnow.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Sansa Stark",
+        "image": "/assets/images/sansa.png"
+    },
+    {
+        "id": 9,
+        "name": "Syrio Forel",
+        "image": "/assets/images/syrio.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Theon Greyjoy",
+        "image": "/assets/images/theon.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Tyrion Lannister",
+        "image": "/assets/images/tyrion.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Lord Varys",
+        "image": "/assets/images/varys.jpg"
+    }
+]

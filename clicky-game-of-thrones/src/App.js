@@ -11,7 +11,8 @@ class App extends React.Component {
   state = {
     characters,
     score: 0,
-    topScore: 0
+    topScore: 0,
+    display: "Click an image to begin!"
   };
 
   shuffle = arr => {
@@ -28,7 +29,10 @@ class App extends React.Component {
       char.count = 0;
       console.log(`Character Count: ${char.count}`);
     })
-    this.setState({score: 0});
+    this.setState({
+      score: 0,
+      display: "You guessed incorrectly! Try and beat your top score!"
+    });
     return true
   }
   
@@ -38,7 +42,10 @@ class App extends React.Component {
         if (characters[i].count === 0) {
           characters[i].count = characters[i].count + 1;
           console.log(`Count: ${characters[i].count}`)
-          this.setState({score: this.state.score + 1}, function() {
+          this.setState({
+            score: this.state.score + 1,
+            display: "You guessed correctly!"
+          }, function() {
             console.log(`Score: ${this.state.score}`)
           })
           this.shuffle(this.state.characters);
@@ -53,9 +60,9 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
+        <Header score={this.state.score} topScore={this.state.topScore}/>
         <Container>
-          <Instructions />
+          <Instructions display={this.state.display}/>
           <Wrapper>
             {this.state.characters.map(character => (
                 <PictureCard

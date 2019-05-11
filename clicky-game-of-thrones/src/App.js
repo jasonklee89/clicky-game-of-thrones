@@ -17,8 +17,8 @@ class App extends React.Component {
 
   // Function that shuffles an array
   shuffle = arr => {
-    return arr.sort(() => Math.random() - 0.5)
-  }
+    return arr.sort(() => Math.random() - 0.5);
+  };
 
   gameOver = () => {
     // Updates topScore if score is greater than topScore
@@ -36,9 +36,10 @@ class App extends React.Component {
     this.setState({
       score: 0,
       display: "You guessed incorrectly! Try and beat your top score!"
-    });
-    return true
-  }
+    })
+    this.shuffle(this.state.characters);
+    return true;
+  };
   
   handleClick = id => {
     // Matches clicked id with characters id in array
@@ -63,9 +64,8 @@ class App extends React.Component {
           this.gameOver();
         }
       }
-      return true;
     })
-  }
+  };
 
   render() {
     return (
@@ -87,8 +87,8 @@ class App extends React.Component {
           </Wrapper>
         </Container>
       </React.Fragment>
-    );
+    )
   }
-}
+};
 
 export default App;

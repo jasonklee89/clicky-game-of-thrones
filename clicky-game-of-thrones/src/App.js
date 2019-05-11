@@ -36,9 +36,11 @@ class App extends React.Component {
     this.setState({
       score: 0,
       display: "You guessed incorrectly! Try and beat your top score!"
+    }, function() {
+      alert(`reset`)
     })
     this.shuffle(this.state.characters);
-    return true;
+    return;
   };
   
   handleClick = id => {
@@ -48,7 +50,7 @@ class App extends React.Component {
         // Adds 1 to characters count value if it = 0
         if (characters[i].count === 0) {
           characters[i].count = characters[i].count + 1;
-          console.log(`Count: ${characters[i].count}`)
+          console.log(`${characters[i].name} Count: ${characters[i].count}`)
           // Adds 1 to score and displays "correct" message
           this.setState({
             score: this.state.score + 1,

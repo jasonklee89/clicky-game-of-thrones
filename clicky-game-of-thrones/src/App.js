@@ -4,7 +4,6 @@ import Wrapper from "./components/Wrapper";
 import Instructions from "./components/Instructions";
 import Header from "./components/Header";
 import characters from "./characters.json";
-import characterArr from "./characterArr.json";
 import Container from 'react-bootstrap/Container'
 import './App.css';
 
@@ -15,7 +14,7 @@ class App extends React.Component {
     topScore: 0
   };
 
-  shuffle = (arr) => {
+  shuffle = arr => {
     return arr.sort(() => Math.random() - 0.5)
   }
   
@@ -23,18 +22,13 @@ class App extends React.Component {
     
   // }
 
-  handleClick = (event) => {
-    event.preventDefault();
-    for (var i = 0; i < this.state.characterArr.length; i++) {
-      const characterId = this.state.characterArr[i].id
-      const id = parseInt(event.currentTarget.id)
-      if (id === characterId) {
-        this.setState({
-          characterArr: this.state.characterArr.splice(i, 1)
-        })
+  handleClick = id => {
+    this.state.characters.find((char, i) => {
+      if (char.id === id) {
+        console.log(char.id)
+        console.log(id)
       }
-      console.log(this.state.characterArr)
-    }
+    })
     this.setState({
       characters: this.shuffle(this.state.characters)
     })
@@ -48,13 +42,12 @@ class App extends React.Component {
           <Instructions />
           <Wrapper>
             {this.state.characters.map(character => (
-              <div onClick={this.handleClick} 
-              id={character.id} key={character.id}>
                 <PictureCard
-                  name={character.name}
+                  handleClick={this.handleClick}
+                  id={character.id} 
+                  key={character.id}
                   image={character.image}
                 />
-              </div>
             ))}
           </Wrapper>
         </Container>

@@ -5,7 +5,7 @@ import "./style.css";
 function Instructions(props) {
     return (
         <Jumbotron className="text-center">
-        <h1>Clicky Game of Thrones!</h1>
+        <h1><i class="fas fa-crown"></i> Clicky Game of Thrones <i class="fas fa-crown"></i></h1>
         <br/>
         <h5>{props.display}</h5>
       </Jumbotron>

@@ -25,8 +25,10 @@ class App extends React.Component {
   handleClick = id => {
     this.state.characters.find((char, i) => {
       if (char.id === id) {
-        console.log(char.id)
-        console.log(id)
+        if (characters[i].count === 0) {
+          console.log(characters[i])
+        }
+        
       }
     })
     this.setState({

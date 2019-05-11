@@ -28,6 +28,8 @@ class App extends React.Component {
       char.count = 0;
       console.log(`Character Count: ${char.count}`);
     })
+    this.setState({score: 0});
+    return true
   }
   
   handleClick = id => {

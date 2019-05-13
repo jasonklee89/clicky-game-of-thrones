@@ -20,6 +20,21 @@ class App extends React.Component {
     return arr.sort(() => Math.random() - 0.5);
   };
 
+  resetCount = () => {
+    return this.state.characters.map(character => {
+      return Object.assign({}, character, { count: 0});
+    })
+  }
+
+  increaseCount = (id) => {
+    return this.state.characters.map(character => {
+      if (character.id === id) {
+        return Object.assign({}, character, { count: character.count + 1 });
+      }
+      return character;
+    })
+  }
+
   gameOver = () => {
     // Updates topScore if score is greater than topScore
     if (this.state.score > this.state.topScore) {
@@ -27,17 +42,15 @@ class App extends React.Component {
         console.log(`Top Score: ${this.state.topScore}`);
       })
     }
-    // Resets each characters count value to 0
-    this.state.characters.forEach(char => {
-      char.count = 0;
-      console.log(`Character Count: ${char.count}`);
-    })
+    
+    const newCharacters = this.resetCount();
     // Resets score to 0, and displays "incorrect" message
     this.setState({
+      characters: newCharacters,
       score: 0,
       display: "You guessed incorrectly! Try and beat your top score!"
     }, function() {
-      alert(`reset`)
+      // alert(`reset`)
     })
     this.shuffle(this.state.characters);
     return;
@@ -48,18 +61,19 @@ class App extends React.Component {
     this.state.characters.find((char, i) => {
       if (char.id === id) {
         // Adds 1 to characters count value if it = 0
-        if (characters[i].count === 0) {
-          characters[i].count = characters[i].count + 1;
-          console.log(`${characters[i].name} Count: ${characters[i].count}`)
+        if (this.state.characters[i].count === 0) {
+          const newCharacters = this.increaseCount(char.id);
+          console.log(`${newCharacters[i].name} Count: ${newCharacters[i].count}`);
+          this.shuffle(newCharacters);
           // Adds 1 to score and displays "correct" message
           this.setState({
+            characters: newCharacters,
             score: this.state.score + 1,
             display: "You guessed correctly!"
           }, function() {
             console.log(`Score: ${this.state.score}`)
           })
           // Shuffles image order
-          this.shuffle(this.state.characters);
           return true;
         } else {
           // If characters count value doesn't = 0, run gameOver function

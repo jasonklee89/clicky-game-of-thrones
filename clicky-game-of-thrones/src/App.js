@@ -3,7 +3,7 @@ import PictureCard from "./components/PictureCard";
 import Wrapper from "./components/Wrapper";
 import Instructions from "./components/Instructions";
 import Header from "./components/Header";
-import characters from "./characters.json";
+import characters from "./characters.js";
 import Container from 'react-bootstrap/Container'
 import './App.css';
 

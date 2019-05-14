@@ -1,8 +1,9 @@
-[
+import AryaImg from './images/arya.jpg';
+export default [
     {
         "id": 1,
         "name": "Arya Stark",
-        "image": "/assets/images/arya.jpg",
+        "image": AryaImg,
         "count": 0
     },
     {

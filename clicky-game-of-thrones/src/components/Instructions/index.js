@@ -11,6 +11,6 @@ function Instructions(props) {
         <h5>{props.display}</h5>
       </Jumbotron>
     )
-}
+};
 
 export default Instructions;

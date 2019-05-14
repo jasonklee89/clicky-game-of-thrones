@@ -1,16 +1,27 @@
 {
   "files": {
     "main.css": "/clicky-game-of-thrones/static/css/main.3acde289.chunk.css",
-    "main.js": "/clicky-game-of-thrones/static/js/main.86b70c59.chunk.js",
-    "main.js.map": "/clicky-game-of-thrones/static/js/main.86b70c59.chunk.js.map",
+    "main.js": "/clicky-game-of-thrones/static/js/main.6c8273c3.chunk.js",
+    "main.js.map": "/clicky-game-of-thrones/static/js/main.6c8273c3.chunk.js.map",
     "runtime~main.js": "/clicky-game-of-thrones/static/js/runtime~main.cd2e6721.js",
     "runtime~main.js.map": "/clicky-game-of-thrones/static/js/runtime~main.cd2e6721.js.map",
-    "static/js/2.dafcb6ff.chunk.js": "/clicky-game-of-thrones/static/js/2.dafcb6ff.chunk.js",
-    "static/js/2.dafcb6ff.chunk.js.map": "/clicky-game-of-thrones/static/js/2.dafcb6ff.chunk.js.map",
+    "static/js/2.98c36106.chunk.js": "/clicky-game-of-thrones/static/js/2.98c36106.chunk.js",
+    "static/js/2.98c36106.chunk.js.map": "/clicky-game-of-thrones/static/js/2.98c36106.chunk.js.map",
     "index.html": "/clicky-game-of-thrones/index.html",
-    "precache-manifest.53ffda60c1fe422828527906e83cf6f2.js": "/clicky-game-of-thrones/precache-manifest.53ffda60c1fe422828527906e83cf6f2.js",
+    "precache-manifest.6a793fba2a22ee43dacd875dad92563c.js": "/clicky-game-of-thrones/precache-manifest.6a793fba2a22ee43dacd875dad92563c.js",
     "service-worker.js": "/clicky-game-of-thrones/service-worker.js",
     "static/css/main.3acde289.chunk.css.map": "/clicky-game-of-thrones/static/css/main.3acde289.chunk.css.map",
-    "static/media/arya.jpg": "/clicky-game-of-thrones/static/media/arya.c0a9236f.jpg"
+    "static/media/arya.jpg": "/clicky-game-of-thrones/static/media/arya.c0a9236f.jpg",
+    "static/media/baelish.jpg": "/clicky-game-of-thrones/static/media/baelish.2640c3c1.jpg",
+    "static/media/brienne.jpg": "/clicky-game-of-thrones/static/media/brienne.89693ac2.jpg",
+    "static/media/daenerys.jpg": "/clicky-game-of-thrones/static/media/daenerys.608e5b49.jpg",
+    "static/media/hodor.jpg": "/clicky-game-of-thrones/static/media/hodor.7176e88f.jpg",
+    "static/media/jaqen.jpg": "/clicky-game-of-thrones/static/media/jaqen.e8417c61.jpg",
+    "static/media/jonsnow.jpg": "/clicky-game-of-thrones/static/media/jonsnow.d06026a7.jpg",
+    "static/media/sansa.png": "/clicky-game-of-thrones/static/media/sansa.d45d0ce0.png",
+    "static/media/syrio.jpg": "/clicky-game-of-thrones/static/media/syrio.73be727a.jpg",
+    "static/media/theon.jpg": "/clicky-game-of-thrones/static/media/theon.0259163d.jpg",
+    "static/media/tyrion.jpg": "/clicky-game-of-thrones/static/media/tyrion.2a8d8754.jpg",
+    "static/media/varys.jpg": "/clicky-game-of-thrones/static/media/varys.87949a40.jpg"
   }
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/clicky-game-of-thrones/precache-manifest.53ffda60c1fe422828527906e83cf6f2.js"
+  "/clicky-game-of-thrones/precache-manifest.6a793fba2a22ee43dacd875dad92563c.js"
 );
 
 self.addEventListener('message', (event) => {

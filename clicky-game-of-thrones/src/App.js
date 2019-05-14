@@ -19,13 +19,13 @@ class App extends React.Component {
   shuffle = arr => {
     return arr.sort(() => Math.random() - 0.5);
   };
-
+  // Resets character count
   resetCount = () => {
     return this.state.characters.map(character => {
-      return Object.assign({}, character, { count: 0});
+      return Object.assign({}, character, { count: 0 });
     })
   }
-
+  // Updates character count
   increaseCount = (id) => {
     return this.state.characters.map(character => {
       if (character.id === id) {
@@ -42,7 +42,7 @@ class App extends React.Component {
         console.log(`Top Score: ${this.state.topScore}`);
       })
     }
-    
+    this.shuffle(this.state.characters);
     const newCharacters = this.resetCount();
     // Resets score to 0, and displays "incorrect" message
     this.setState({
@@ -52,7 +52,6 @@ class App extends React.Component {
     }, function() {
       // alert(`reset`)
     })
-    this.shuffle(this.state.characters);
     return;
   };
   
@@ -64,6 +63,7 @@ class App extends React.Component {
         if (this.state.characters[i].count === 0) {
           const newCharacters = this.increaseCount(char.id);
           console.log(`${newCharacters[i].name} Count: ${newCharacters[i].count}`);
+          // Shuffles image order
           this.shuffle(newCharacters);
           // Adds 1 to score and displays "correct" message
           this.setState({
@@ -73,7 +73,6 @@ class App extends React.Component {
           }, function() {
             console.log(`Score: ${this.state.score}`)
           })
-          // Shuffles image order
           return true;
         } else {
           // If characters count value doesn't = 0, run gameOver function

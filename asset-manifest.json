@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clicky-game-of-thrones/static/css/main.3acde289.chunk.css",
+    "main.js": "/clicky-game-of-thrones/static/js/main.1d0f0705.chunk.js",
+    "main.js.map": "/clicky-game-of-thrones/static/js/main.1d0f0705.chunk.js.map",
+    "runtime~main.js": "/clicky-game-of-thrones/static/js/runtime~main.cd2e6721.js",
+    "runtime~main.js.map": "/clicky-game-of-thrones/static/js/runtime~main.cd2e6721.js.map",
+    "static/js/2.dafcb6ff.chunk.js": "/clicky-game-of-thrones/static/js/2.dafcb6ff.chunk.js",
+    "static/js/2.dafcb6ff.chunk.js.map": "/clicky-game-of-thrones/static/js/2.dafcb6ff.chunk.js.map",
+    "index.html": "/clicky-game-of-thrones/index.html",
+    "precache-manifest.e986afbd517c7675ae6cd4cf4838a6a2.js": "/clicky-game-of-thrones/precache-manifest.e986afbd517c7675ae6cd4cf4838a6a2.js",
+    "service-worker.js": "/clicky-game-of-thrones/service-worker.js",
+    "static/css/main.3acde289.chunk.css.map": "/clicky-game-of-thrones/static/css/main.3acde289.chunk.css.map"
+  }
+}

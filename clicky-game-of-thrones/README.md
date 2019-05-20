@@ -18,4 +18,4 @@
 https://jasonklee89.github.io/clicky-game-of-thrones/
 
 ### Screenshot
-![Clicky GOT](/public/assets/images/screenshot/screenshot.png?raw=true "Clicky GOT")
+![ClickyGOT](/public/assets/images/screenshot/screenshot.png?raw=true "ClickyGOT")
